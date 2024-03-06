@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -126,29 +127,31 @@ img {
 
 /************************************************
     SOLUZIONE RESPONSIVE
- ************************************************/
+************************************************/
 
 
- /* SOLUZIONE 1140 desktop */
+/* SOLUZIONE 1140 desktop */
 @media screen and (max-width: 1140px) {
     .container {
         margin: 0 auto;
         max-width: 100%;
     }
 }
- /* /SOLUZIONE 1140 desktop */
+
+/* /SOLUZIONE 1140 desktop */
 
 
- /* SOLUZIONE 768 tablet */
- @media screen and (max-width 768px) {
+/* SOLUZIONE 768 tablet */
+@media screen and (max-width 768px) {
     .container {
         margin: 0 auto;
         max-width: 60%;
     }
- }
- /* /SOLUZIONE 768 tablet */
+}
 
- /* SOLUZIONE 480 mobile */
+/* /SOLUZIONE 768 tablet */
+
+/* SOLUZIONE 480 mobile */
 @media screen and (max-width: 480px) {
 
     /* sezione lesson */
@@ -172,7 +175,23 @@ img {
     .steps .col {
         width: 100%;
     }
+
     /* /sezione lesson */
 
     /* sezione why-us */
-    
+    main .why-us {
+        background-color: black;
+    }
+
+    .why-us .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .why-us .col {
+        width: 100%;
+    }
+    /* sezione why-us */
