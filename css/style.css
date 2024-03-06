@@ -127,3 +127,52 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+
+ /* SOLUZIONE 1140 desktop */
+@media screen and (max-width: 1140px) {
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
+ /* /SOLUZIONE 1140 desktop */
+
+
+ /* SOLUZIONE 768 tablet */
+ @media screen and (max-width 768px) {
+    .container {
+        margin: 0 auto;
+        max-width: 60%;
+    }
+ }
+ /* /SOLUZIONE 768 tablet */
+
+ /* SOLUZIONE 480 mobile */
+@media screen and (max-width: 480px) {
+
+    /* sezione lesson */
+    .lessons .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lesson .col {
+        width: 100%;
+    }
+
+    /* sezione steps */
+    .steps .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps .col {
+        width: 100%;
+    }
+    /* /sezione lesson */
+
+    /* sezione why-us */
+    
