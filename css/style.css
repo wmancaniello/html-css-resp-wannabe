@@ -145,7 +145,7 @@ img {
 @media screen and (max-width 768px) {
     .container {
         margin: 0 auto;
-        max-width: 60%;
+        max-width: 100%;
     }
 }
 
@@ -195,3 +195,47 @@ img {
         width: 100%;
     }
     /* sezione why-us */
+
+
+/* CORREZIONE */
+
+/* tablet */
+/* prima mi posiziono sotto 768 px con l'inspector */
+/* Creo un file responsive.css nella cartella css e lo linko sotto lo style */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+/* /tablet */
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .lessons .col,
+    .steps .col,
+    .why-us .col {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .why-us {
+        padding: 3rem;
+        background-color: black;
+        margin-bottom: 0;
+    }
+
+    .steps {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width 768px) and (max-width: 1160px) {
+    .container {
+        max-width: 768px;
+    }      
+}
+
